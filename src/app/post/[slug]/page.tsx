@@ -2,9 +2,10 @@ import { getPosts, getSinglePost } from "@/services/api.service";
 import { Bebas_Neue, Nunito } from "next/font/google";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import ReactHtmlParser from "react-html-parser";
+
 import { formatDateService } from "@/services/formatDate.service";
 import { Author, PostOrPage } from "@tryghost/content-api";
+import ArticleContent from "@/components/ArticleContent";
 
 const bebas = Bebas_Neue({ weight: "400", subsets: ["latin"] });
 const nunito = Nunito({ weight: "400", subsets: ["latin"] });
@@ -79,7 +80,7 @@ async function Post({ params }: { params: { slug: string } }) {
         ></Image>
       </figure>
       <div className={`${nunito.className}`}>
-        {ReactHtmlParser(post.html as string)}
+        <ArticleContent content={post.html as string} />
       </div>
     </article>
   );
