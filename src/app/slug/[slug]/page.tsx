@@ -21,7 +21,7 @@ async function Page({ params }: { params: { slug: string } }) {
           <li className="btn btn-ghost">
             <Link href={"/"}>Home</Link>
           </li>
-          <li className="uppercase flex flex-row gap-1">
+          <li className="uppercase flex flex-row gap-3">
             {params.slug}
             <span className="badge badge-accent">{numPost}</span>
           </li>

@@ -4,11 +4,11 @@ import PostCard from "../PostCard";
 
 function ListOfPost({ postList }: { postList: PostsOrPages }) {
   return (
-    <div className="flex flex-row justify-center flex-wrap gap-6">
+    <section className="w-full px-4 flex flex-col gap-10 items-center">
       {postList.map((post) => (
         <PostCard key={post.id} post={post} />
       ))}
-    </div>
+    </section>
   );
 }
 

@@ -12,7 +12,7 @@ function MainLayout({
   return (
     <>
       <Header navigation={navigation} />
-      <main className="px-4 lg:px-40 py-20">{children}</main>
+      <main className="px-4 lg:px-6 py-20">{children}</main>
       <Footer />
     </>
   );

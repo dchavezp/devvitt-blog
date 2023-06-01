@@ -5,7 +5,7 @@ import SocialIcons from "../SocialIcons";
 import Link from "next/link";
 function Footer() {
   return (
-    <footer className="px-3 py-8 transition-colors duration-200 bg-neutral">
+    <footer className="px-3 py-8 transition-colors duration-200">
       <div className="flex flex-col">
         <div className="h-px mx-auto rounded-full md:hidden mt-7 w-11"></div>
         <div className="flex flex-col mt-4 md:mt-0 md:flex-row">
