@@ -47,7 +47,7 @@ function PostCard({ post }: { post: PostOrPage }) {
             {post.reading_time} min read
           </span>
         </p>
-        <p className="mt-2 text-neutral-500 ">{post.meta_description}</p>
+        <p className="mt-2 text-neutral-400 ">{post.meta_description}</p>
         <Link
           href={`/post/${post.slug}`}
           className="btn btn-outline btn-sm mt-6"
@@ -63,7 +63,7 @@ function PostCard({ post }: { post: PostOrPage }) {
             height={400}
             alt={post.title as string}
             className="object-cover max-h-[240px] w-full lg:aspect-video rounded-xl"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 25vw"
           />
         </figure>
       </Link>
