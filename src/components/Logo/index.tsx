@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logoImg from "@/images/logov2.svg";
+import logoImg from "@/images/logo-v2.png";
 import Link from "next/link";
 
 function Logo() {
@@ -11,7 +11,6 @@ function Logo() {
     >
       <Image
         src={logoImg}
-        className="w-[100px]"
         alt="devvitt logo"
         placeholder="blur"
         blurDataURL={"/images/logo.svg"}
